@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 20px;
+    background-color: #000;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 50px 10px 50px;
+}
+
+header,
+ul {
+    color: white;
+}
+
+span,
+ a:hover{
+    color: mediumseagreen;
+}
+
+ul li{
+    display: inline-block;
+}
+
+li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+.blackChairContent {
+    width: 100%;
+    background: rgb(170,170,170);
+    background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 100%, rgba(172,172,172,1) 100%);
+}
+
+.blackChairImg {
+    width: 50%;
+    height: 600px;
+    background-image: url(../images/black_chair.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
