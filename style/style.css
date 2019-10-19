@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'ralewaybold';
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
@@ -39,7 +48,6 @@ ul li{
 }
 
 li a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
     text-decoration: none;
     margin: 0 10px 0 10px;
@@ -63,13 +71,24 @@ li a {
     background-size: contain;
     background-position: center;
     background-color: aqua;
+    display: flex;
 }
 
+.sliderArrows a{
+    text-decoration: none;
+    color: mediumseagreen;
+    font-size: 70px;
+    display: flex;
+    z-index: 1000;
+    
+}
+
+
 .blackChairText {
-    height: 50%;
     text-align: center;
     background-color: red;
     float: right;
+    justify-content: center;
     width: 40%;
     display: flex;
     height: 500px;
@@ -79,16 +98,29 @@ li a {
     border: 1px solid blue;
 }
 
-.chairBoxes .box{
+.textWrapper h2 {
+    font-size: 60px;
+}
+
+.textWrapperBtn {
+    margin-top: 35px;
+    border: none;
+    background-color: mediumseagreen;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px 30px;
+}
+
+.chairBoxes {
     display: flex;
     justify-content: space-around;
-    display: inline-block;
 }
 
 .box {
-    display: flex;
+    display: inline-block;
     background-color: antiquewhite;
     width: 400px;
-    height: 400px;   
+    height: 300px;   
     border: 1px solid blue;
 }
