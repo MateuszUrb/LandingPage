@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'ralewayregular';
+    font-family: 'ralewayregular' ;
 }
 
 @font-face {
@@ -29,7 +29,7 @@ header {
 }
 
 .container {
-    width: 66%;
+    width: 80%;
     margin: 0 auto;
     border: 1px solid red;
     display: flex;
@@ -39,7 +39,8 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 10px 50px 10px 50px;
+    height: 40px;
+    align-items: center;
 }
 
 header,
@@ -66,69 +67,46 @@ li a {
     text-decoration: none;
     margin: 0 10px 0 10px;
 }
-.blackChairContent {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+.container {
     display: flex;
+    justify-content: center;
+}
+
+.gradientBackg {
     background: rgb(199,199,199);
-    background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 100%, rgba(172,172,172,1) 100%);
+background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(255,255,255,0.8631827731092436) 100%, rgba(172,172,172,1) 100%);
 }
 
-.blackChairImg {
-    justify-content: center;
-    margin: 60px 0 30px 0;
-    width: 50%;
-    position: relative;
+.slider {
+    height: 500px;
+    width: 90%;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+/* .sliderChair{ 
+    height: 500px;
+    border: 1px solid red;
     float: left;
-    height: 500px;
-    background-image: url(../images/black_chair.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: aqua;
-    display: flex;
+    background-size: cover;
+   
 }
 
-
-.sliderArrows  {
-    display: flex;
-}
-
-.sliderArrows a{
-    text-decoration: none;
-    color: mediumseagreen;
-    font-size: 70px;
-    display: flex;
-    z-index: 1000;
-    justify-content: space-between;
-}
-
-
-.blackChairText {
-    text-align: center;
-    background-color: red;
+.sliderItem {
     float: right;
-    width: 500px;
-    display: flex;
     height: 500px;
-    z-index: 1000;
-}
+    border: 1px solid green;
+    justify-content: center;
+} */
 
-
-.textWrapper h2 {
-    text-transform: uppercase;
+.sliderItem h1 {
+    margin-top: 30px;
+    height: 90px;
     font-size: 50px;
-}
-
-.textWrapperBtn {
-    margin-top: 35px;
-    border: none;
-    background-color: mediumseagreen;
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-size: 25px;
-    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .chairBoxes {
@@ -141,15 +119,72 @@ li a {
 .box {
     align-items: center;
     display: inline-block;
-    background-color: antiquewhite;
     width: 400px;
     height: 280px;   
     border: 1px solid blue;
 }
 
+.box:nth-child(1) {
+    background-image: url(../images/box1_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box:nth-child(2) {
+    background-image: url(../images/box2_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.insideBoxContent:nth-child(1),
+.insideBoxContent:nth-child(2) {
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 200px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0 0 0 5px;
+}
+
+.insideBoxContent:nth-child(3) {
+    width: 100%;
+    height: 70px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0 0 0 5px;
+}
+
+.textbox::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 5px;
+    background-color: mediumseagreen;
+}
+
+.greenUndescoreBox {
+    height: 7px;
+    width: 120px;
+    background-color: mediumseagreen;
+}
+
+.boxWrapper {
+    margin: 0 auto;
+    width: 55%;
+    display: flex;
+}
+
 .box:last-child {
     position: relative;
     height: 310px;
+}
+
+.insideBoxContent {
+    display: flex;
+    align-items: center;
 }
 
 .prizeBackGround {
@@ -162,7 +197,6 @@ li a {
 }
 
 .prizes {
-    position: relative;
     display: flex;
     width: 100%;
     height: 700px;
@@ -197,7 +231,6 @@ form {
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: space-around;
 }
 
@@ -214,7 +247,6 @@ input[type="text"],[type="email"], textarea {
     height: 70px;
     padding: 12px;
     border: 1px solid mediumspringgreen;
-    border-radius: 4px;
     font-size: 40px;
     color: ghostwhite;
     align-items: center;
