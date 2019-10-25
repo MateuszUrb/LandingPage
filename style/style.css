@@ -80,10 +80,26 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 
 .slider {
     height: 600px;
-    width: 100%;
+    width: 90%;
     border: 1px solid blue;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
+}
+
+.sliderTitle {
+    width: 100%;
+    height: 60px;
+    border: 1px solid orangered;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sliderContentBtn {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .sliderChair{ 
@@ -96,7 +112,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
 
 .slider::before {
-    content: "<";
+    content: ">";
     font-size: 100px;
     color: mediumseagreen
     ;
@@ -104,26 +120,40 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
 
 .slider::after {
-    content: ">";
+    content: "<" attr(href);
     font-size: 100px;
     color: mediumseagreen;
     
 }
 
+.sliderText {
+    text-align: center;
+    line-height: 25px;
+}
 
 .sliderItem {
+    justify-content: center;
+    display: flex;
     float: right;
-    height: 300px;
+    height: 350px;
     width: 50%;
     border: 1px solid green;
- } 
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-.sliderItem h1 {
-    margin-top: 30px;
-    height: 90px;
-    width: 70%;
-    font-size: 50px;
-    justify-content: center;
+input[type="button"] {
+    height: 60px;
+    width: 50%;
+    border-radius: 13px;
+    background-color: mediumseagreen;
+    font-weight: bold;
+    border: none;
+    justify-content: center; 
+    font-family: 'ralewayregular';
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .chairBoxes {
