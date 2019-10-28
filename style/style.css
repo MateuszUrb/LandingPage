@@ -29,7 +29,7 @@ header {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     border: 1px solid red;
     display: flex;
@@ -50,7 +50,7 @@ ul {
 
 span,
  a:hover{
-    color: mediumseagreen;
+    color: #27c7ab;
 }
 
 span,
@@ -104,7 +104,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 
 .sliderChair{ 
     height: 500px;
-    width: 50%;
+    width: 60%;
     border: 1px solid red;
     float: left;
     background-size: cover;
@@ -122,7 +122,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .slider::after {
     content: "<" attr(href);
     font-size: 100px;
-    color: mediumseagreen;
+    color: #27c7ab;
     
 }
 
@@ -143,13 +143,12 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
 
 .sliderBtn {
-    background-color: mediumseagreen;
+    background-color: #27c7ab;
     border-radius: 10px;
     border: none;
     height: 70px;
     width: 300px;
     font-size: 30px;
-    font-weight: bold;
     text-transform: uppercase;
     color: white;
     float: right;
@@ -214,7 +213,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     display: block;
     width: 140px;
     height: 8px;
-    background-color: mediumseagreen;
+    background-color: #27c7ab;
 }
 
 .priceList {
@@ -228,14 +227,14 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     display: block;
     height: 8px;
     width: 350px;
-    background-color: mediumseagreen;
+    background-color: #27c7ab;
 }
 
 
 .greenUndescoreBox {
     height: 7px;
     width: 120px;
-    background-color: mediumseagreen;
+    background-color: #27c7ab;
 }
 
 .boxWrapper {
@@ -255,7 +254,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
  
 .prizeBackGround {
-    background-color: bisque;
+    background-color: #f1f1f1;
 
 }
 
@@ -287,14 +286,28 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     height: 50%;
     align-items: flex-end;
 }
-.prizeValue {
+
+.prizeValue,
+.mscVaceValueMdl {
     padding-bottom: 30px;
     position: absolute;
     border: 1px solid blue;
 }
 
-.prizeOption {
+.prizeValueMdl {
+    padding-bottom: 30px;
+    position: absolute;
+    border: 1px solid blue;
+}
+
+.prizeOption,
+.prizeOptionMdl {
     font-size: 30px;
+}
+
+.prizeOptionMdl,
+.mdl {
+    color: white;
 }
 
 .description {
@@ -310,9 +323,9 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     height: 50%;
 }
 
-.circleTop {
+.circleTop  {
     margin-left: 40%;
-    margin-top: -30px;
+    margin-top: -41px;
     position: absolute;
     width: 60px;
     height: 60px;
@@ -322,6 +335,17 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     border: 1px solid gray;
 }
 
+.circleTopMdl {
+    margin-left: 40%;
+    margin-top: -41px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: #27c7ab;
+    border-radius: 50%;
+    border: 1px solid #27c7ab;
+}
 
 .circleInsideCirlce {
     border: 10px solid gray;
@@ -334,19 +358,31 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     height: 30px;
 }
 
+.circleInsideCirlceMdl {
+    border: 10px solid #fff;
+    background-color: #fff;
+    margin-left: 14px;
+    margin-top: 14px;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
 .plan {
     display: flex;
     width: 350px;
     height: 500px;
-    border: 1px solid gray;
+    border: 2px solid #d4d4d4;
     display: inline-block;
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 3px;
     position: relative;
 }
 
 .plan:nth-child(2) {
-    background-color: mediumseagreen;
+    border: 2px solid #27c7ab;
+    background-color: #27c7ab;
 }
 
 .planOption {
@@ -355,11 +391,20 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 40px;
+    color: #27c7ab;
 }
 
-.planOption:nth-child(1) {
-    color: mediumaquamarine;
+.planOptionMdl {
+    justify-content: center;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #fff;
 }
+
+
 
 .prizeValue,
 .mscVaceValue {
@@ -377,11 +422,58 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     color: rgb(143, 143, 143);
 }
 
+
+.descriptionItems:nth-child(1) {
+    background-color: #e4e4e4;
+}
+
+.descriptionItems:nth-child(2),
+.descriptionItems:nth-child(4) {
+    background-color: #f1f1f1;
+}
+
+.descriptionItems:nth-child(3) {
+    background-color: white;
+}
+
+.buttonWrapper,
+.buttonWrapperMdl {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
 .prizeOptionBtn {
+    font-family: 'ralewayregular';
     width: 100px;
+    border-radius: 5px;
+    width: 110px;
+    font-size: 15px;
+    color: white;
+    background-color: #27c7ab;
+    border: none;
+    text-transform: uppercase;
     justify-content: center;
     display: flex;
+    font-weight: bold;
 }
+
+.prizeOptionBtnMdl {
+    font-family: 'ralewayregular';
+    width: 100px;
+    border-radius: 5px;
+    width: 110px;
+    font-size: 15px;
+    color: #27c7ab;
+    background-color: #fff;
+    border: none;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+
 
 form {
     height: 300px;
@@ -403,7 +495,7 @@ input[type="text"],[type="email"], textarea {
     width: 600px;
     height: 70px;
     padding: 12px;
-    border: 1px solid mediumspringgreen;
+    border: 1px solid #27c7ab;
     font-size: 40px;
     color: ghostwhite;
     align-items: center;
@@ -427,7 +519,7 @@ input[type="text"],[type="email"], textarea {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    border: 1px solid mediumseagreen;
+    border: 1px solid #27c7ab;
 }
 
 .formOrangeChair {
