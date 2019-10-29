@@ -31,7 +31,6 @@ header {
 .container {
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
 }
 
@@ -81,7 +80,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .slider {
     height: 600px;
     width: 90%;
-    border: 1px solid blue;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -90,13 +88,11 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .sliderTitle {
     width: 100%;
     height: 60px;
-    border: 1px solid orangered;
     font-size: 50px;
     text-align: center;
 }
 
 .sliderContentBtn {
-    border: 1px solid red;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -105,7 +101,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .sliderChair{ 
     height: 500px;
     width: 60%;
-    border: 1px solid red;
     float: left;
     background-size: cover;
    
@@ -114,9 +109,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .slider::before {
     content: ">";
     font-size: 100px;
-    color: mediumseagreen
-    ;
-    
+    color: mediumseagreen;
 }
 
 .slider::after {
@@ -137,9 +130,9 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     float: right;
     height: 350px;
     width: 50%;
-    border: 1px solid green;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 5%;
 }
 
 .sliderBtn {
@@ -166,10 +159,8 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     display: inline-block;
     width: 400px;
     height: 280px;   
-    border: 1px solid blue;
     display: flex;
 }
-
 
 .box:nth-child(1) {
     background-image: url(../images/box1_img.jpg);
@@ -195,12 +186,12 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     padding: 0 0 0 5px;
 }
 
-
 .lastBoxContent {
     margin-left: 10px;
-    border: 1px solid green;
     width: 90%;
+    border: 1px solid #d4d4d4;
     height: 90%;
+
 }
 
 .lastBoxContent p:nth-child(2),
@@ -220,7 +211,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .priceList {
     position: absolute;
     margin: 0 auto;
-    border: 1px solid green;
 }
 
 .priceItem {
@@ -233,9 +223,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     height: 8px;
     width: 350px;
     background-color: #27c7ab;
-    background-color: m;
 }
-
 
 .greenUndescoreBox {
     height: 7px;
@@ -249,7 +237,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     display: flex;
 }
 
-
 .insideBoxContent {
     display: flex;
     align-items: center;
@@ -261,13 +248,11 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
  
 .prizeBackGround {
     background-color: #f1f1f1;
-
 }
 
 .priceList {
     font-size: 25px;
     text-transform: uppercase;
-    border: 1px solid black;
     color: #545454;
     width: 90%;
     margin: 0 auto;
@@ -296,7 +281,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
 
 .mscVaceValue {
-    border: 1px solid red;
     font-size: 15px;
     display: flex;
     height: 50%;
@@ -305,7 +289,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 
 .mscVaceValueMdl {
     text-transform: uppercase;
-    border: 1px solid red;
     font-size: 15px;
     display: flex;
     height: 50%;
@@ -317,7 +300,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     font-size: 30px;
     padding-bottom: 30px;
     position: absolute;
-    border: 1px solid blue;
 }
 
 .prizeValueMdl {
@@ -325,7 +307,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     color: #27c7ab;
     padding-bottom: 30px;
     position: absolute;
-    border: 1px solid blue;
 }
 
 .prizeOptionMdl {
@@ -345,13 +326,10 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .description {
     width: 100%;
     height: 80px;
-    border: 1px solid red;
     margin-top: 10%;
-    
 }
 
 .descriptionItems {
-    border: 1px solid green;
     height: 50%;
 }
 
@@ -436,8 +414,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     color: #fff;
 }
 
-
-
 .prizeValue,
 .mscVaceValue {
     font-weight: bold;
@@ -513,9 +489,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: auto;
-    border: 1px solid orange;
 }
-
 
 .formWrapper {
     align-items: center;
@@ -524,57 +498,60 @@ form {
     height: 600px;
 }
 
-
 input[type="text"],
 [type="email"],
 textarea {
-     margin-top: 30px;
-    width: 600px;
+    margin-top: 30px;
+    width: 100%;
     height: 70px;
     padding: 12px;
     border: 1px solid #27c7ab;
     font-size: 30px;
     align-items: center;
+    resize: none;
     
 }
 
 input[type="text"]::placeholder,
 [type="email"]::placeholder,
 textarea::placeholder {
-    color: #c9c9c9;
+    color: rgb(172, 171, 171);
+}
+
+.rodo {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(172, 171, 171);
 }
 
 .orangeChairContent {
-    border: 1px solid blue;
     height: 500px;
-    width: 30%;
+    width: 40%;
     margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    clear: both;
+    padding-top: 25px;
 }
 
 .checkedIcon {
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+    width: 50px;
+    height: 50px;
     border: 1px solid #27c7ab;
 }
 
 .formOrangeChair {
     width: 250px;
     height: 250px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding-bottom: 20px;
 } 
 
 .orangeChairText {
-    border: 1px solid red;
-    width: 100px;
+    width: 83%;
     margin-top: 10px;
+    position: relative;
 }
 
 .orangeChairBtn {
@@ -582,21 +559,42 @@ textarea::placeholder {
     border-radius: 10px;
     border: none;
     height: 70px;
-    width: 300px;
-    font-size: 30px;
+    width: 53%;
+    font-size: 35px;
     margin-top: 20px;
     text-transform: uppercase;
+    font-weight: bold;
     color: white;
 }
 
 .copyRightWrapper {
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
+.copyRight {
+    font-size: 20px;
+    color: rgb(172, 171, 171);
+}
+
 .footerSocial {
+    width: 29%;
+    align-items: center;
     display: flex;
+}
+
+.logoTextBolded {
+    color: #8a8a8a;
+    text-transform: uppercase;
+}
+
+.footerLogo {
+    padding-left: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
