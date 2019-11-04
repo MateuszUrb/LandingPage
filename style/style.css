@@ -109,7 +109,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .slider::before {
     content: ">";
     font-size: 100px;
-    color: mediumseagreen;
+    color: #27c7ab;
 }
 
 .slider::after {
@@ -146,6 +146,8 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     color: white;
     float: right;
 }
+
+
 
 .chairBoxes {
     margin: 30px 0 80px 0px;
@@ -272,7 +274,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .prizeOption {
     width: 130px;
     height: 130px;
-    border: 2px solid grey;
+    border: 2px solid #e7e7e7;
     border-radius: 50%;
     margin: 30px 0 0 105px;
     display: flex;
@@ -342,7 +344,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     display: block;
     background-color: white;
     border-radius: 50%;
-    border: 2px solid #c2c2c2;
+    border: 2px solid #d4d4d4;
 }
 
 .circleTopMdl {
@@ -358,8 +360,8 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
 
 .circleInsideCirlce {
-    border: 10px solid #c2c2c2;
-    background-color: #c2c2c2;
+    border: 10px solid #d4d4d4;
+    background-color: #d4d4d4;
     margin-left: 13px;
     margin-top: 13px;
     justify-content: center;
@@ -417,7 +419,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 .prizeValue,
 .mscVaceValue {
     font-weight: bold;
-    color: rgb(143, 143, 143);
+    color: #bbbbbb;
     text-transform: uppercase;
 }
  
