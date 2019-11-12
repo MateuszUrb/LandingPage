@@ -42,6 +42,7 @@ header {
     align-items: center;
 }
 
+
 header,
 ul {
     color: white;
@@ -65,6 +66,15 @@ li a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px 0 10px;
+}
+
+.dropdownContent {
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .container {
@@ -106,17 +116,13 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
    
 }
 
-.slider::before {
-    content: ">";
+.leftArrow,
+.rightArrow {
     font-size: 100px;
     color: #27c7ab;
-}
-
-.slider::after {
-    content: "<" attr(href);
-    font-size: 100px;
-    color: #27c7ab;
-    
+    cursor: pointer;
+    align-items: center;
+    display: flex;
 }
 
 .sliderText {
@@ -208,6 +214,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     width: 140px;
     height: 8px;
     background-color: #27c7ab;
+    cursor: pointer;
 }
 
 .priceList {
