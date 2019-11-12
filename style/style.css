@@ -42,6 +42,49 @@ header {
     align-items: center;
 }
 
+nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 15px;
+    float: left;
+    
+}
+
+nav ul li ul {
+    margin-top: 20px;
+    font-size: 15px;
+    display: none ;
+    position: absolute;
+    background-color: #000;
+    padding: 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 160px;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+nav ul li ul::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #000;
+    position: absolute;
+    transform: translateX(-164px) translateY(-14px);
+}
+
+nav ul li ul li a:hover {
+    background-color: rgb(37, 37, 37);
+}
 
 header,
 ul {
@@ -278,12 +321,17 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     justify-content: space-between;
 }
 
+.circleValueWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 20px;
+}
+
 .prizeOption {
     width: 130px;
     height: 130px;
     border: 2px solid #e7e7e7;
     border-radius: 50%;
-    margin: 30px 0 0 105px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,7 +372,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     border: 2px solid #fff;
     background-color: #fff;
     border-radius: 50%;
-    margin: 30px 0 0 105px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,6 +572,9 @@ input[type="text"]::placeholder,
 [type="email"]::placeholder,
 textarea::placeholder {
     color: rgb(172, 171, 171);
+}
+button {
+    cursor: pointer;
 }
 
 .rodo {
