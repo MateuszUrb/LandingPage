@@ -82,7 +82,7 @@ nav ul li ul::after {
     transform: translateX(-164px) translateY(-14px);
 }
 
-nav ul li ul li a:hover {
+nav ul li ul li:hover {
     background-color: rgb(37, 37, 37);
 }
 
@@ -111,23 +111,15 @@ li a {
     margin: 0 10px 0 10px;
 }
 
-.dropdownContent {
-    display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
 .container {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .gradientBackg {
     background: rgb(199,199,199);
-background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(255,255,255,0.8631827731092436) 100%, rgba(172,172,172,1) 100%);
+    background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(255,255,255,0.8631827731092436) 100%, rgba(172,172,172,1) 100%);
 }
 
 .slider {
@@ -140,9 +132,9 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 
 .sliderTitle {
     width: 100%;
-    height: 60px;
     font-size: 50px;
     text-align: center;
+    border: 1px solid blue;
 }
 
 .sliderContentBtn {
@@ -152,10 +144,10 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
 }
 
 .sliderChair{ 
-    height: 500px;
     width: 60%;
     float: left;
     background-size: cover;
+    margin-left: -100px;
    
 }
 
@@ -166,9 +158,12 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     cursor: pointer;
     align-items: center;
     display: flex;
+    z-index: 9999;
 }
 
 .sliderText {
+    border: 1px solid red;
+    margin: 10px 0 10px 0;
     text-align: center;
     line-height: 25px;
 }
@@ -196,8 +191,6 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     float: right;
 }
 
-
-
 .chairBoxes {
     margin: 30px 0 80px 0px;
     width: 100%;
@@ -211,6 +204,7 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     width: 400px;
     height: 280px;   
     display: flex;
+    position: relative;
 }
 
 .box:nth-child(1) {
@@ -241,8 +235,8 @@ background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(
     margin-left: 10px;
     width: 90%;
     border: 1px solid #d4d4d4;
+    padding: 10px 10px 10px 10px;
     height: 90%;
-
 }
 
 .lastBoxContent p:nth-child(2),
@@ -609,7 +603,7 @@ button {
 
 .orangeChairText {
     width: 83%;
-    margin-top: 10px;
+    margin: 10px 0 5px 5px;
     position: relative;
 }
 
