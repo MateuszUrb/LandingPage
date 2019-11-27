@@ -123,11 +123,18 @@ li a {
 }
 
 .slider {
-    height: 600px;
+    margin: 70px;
     width: 90%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+}
+
+@media (max-width: 1000px) {
+    .slider {
+        flex-direction: column;
+        margin: 50px 0 0 0;
+    }
 }
 
 .sliderTitle {
@@ -137,18 +144,21 @@ li a {
 }
 
 .sliderContentBtn {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .sliderChair{ 
-    width: 60%;
-    float: left;
     background-size: cover;
-    margin-left: -100px;
-   
+    justify-items: center;
 }
+
+@media (max-width: 1000px) {
+    .sliderChair {
+        margin: 20px 0 20px 0;
+    }
+}
+
 
 .leftArrow,
 .rightArrow {
@@ -161,20 +171,26 @@ li a {
 }
 
 .sliderText {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 50px 0;
     text-align: center;
     line-height: 25px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .sliderText {
+        overflow: hidden;
+        overflow: scroll;
+        border: 1px solid #27c7ab;
+        padding: 10px;
+    }
 }
 
 .sliderItem {
     justify-content: center;
     display: flex;
-    float: right;
     height: 350px;
-    width: 50%;
     flex-direction: column;
-    justify-content: space-between;
-    padding-right: 5%;
 }
 
 .sliderBtn {
@@ -426,8 +442,8 @@ li a {
 }
 
 .circleTop  {
-    margin-left: 40%;
-    margin-top: -41px;
+    margin-left: 42%;
+    margin-top: -30px;
     position: absolute;
     width: 60px;
     height: 60px;
@@ -438,8 +454,8 @@ li a {
 }
 
 .circleTopMdl {
-    margin-left: 40%;
-    margin-top: -41px;
+    margin-left: 42%;
+    margin-top: -30px;
     position: absolute;
     width: 60px;
     height: 60px;
@@ -692,4 +708,3 @@ button {
     font-weight: bold;
     text-transform: uppercase;
 }
-
