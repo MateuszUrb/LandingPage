@@ -134,7 +134,6 @@ li a {
     width: 100%;
     font-size: 50px;
     text-align: center;
-    border: 1px solid blue;
 }
 
 .sliderContentBtn {
@@ -162,7 +161,6 @@ li a {
 }
 
 .sliderText {
-    border: 1px solid red;
     margin: 10px 0 10px 0;
     text-align: center;
     line-height: 25px;
@@ -198,6 +196,14 @@ li a {
     justify-content: space-between;
 }
 
+@media (max-width: 1350px) {
+    .chairBoxes {
+        margin: 10px 0 10px 0;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .box {
     align-items: center;
     display: inline-block;
@@ -207,24 +213,48 @@ li a {
     position: relative;
 }
 
+@media (max-width: 1350px) {
+    .box {
+        margin: 20px 0 10px 0;
+        width: 60%;
+    }
+}
+
+@media (max-width: 704px) {
+    .lastBoxContent {
+        overflow: hidden;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 1400px) {
+    .textbox {
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
 .box:nth-child(1) {
-    background-image: url(../images/box1_img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/box1_img.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    border: 1px solid #d4d4d4;
 }
 
 .box:nth-child(2) {
-    background-image: url(../images/box2_img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/box2_img.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    border: 1px solid #d4d4d4;
 }
 
 .insideBoxContent:nth-child(1) {
     width: 100%;
     height: 70px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(92, 219, 149, 0.5);
     margin-top: 200px;
     margin-left: 3px;
     margin-right: 3px;
@@ -233,10 +263,10 @@ li a {
 
 .lastBoxContent {
     margin-left: 10px;
-    width: 90%;
     border: 1px solid #d4d4d4;
     padding: 10px 10px 10px 10px;
     height: 90%;
+   
 }
 
 .lastBoxContent p:nth-child(2),
@@ -248,10 +278,23 @@ li a {
 .textbox::after {
     content: "";
     display: block;
-    width: 140px;
     height: 8px;
     background-color: #27c7ab;
     cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+    .prizes {
+        margin: 10px 10px 10px 10px;
+        display: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1180px) {
+    .plan {
+     align-content: center;
+    }
 }
 
 .priceList {
@@ -309,7 +352,6 @@ li a {
     display: flex;
     width: 100%;
     height: 800px;
-    margin-bottom: -70px;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
