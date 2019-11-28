@@ -159,7 +159,6 @@ li a {
     margin: 0 10px 0 10px;
 }
 
-
 .gradientBackg {
     background: rgb(199,199,199);
     background: linear-gradient(0deg, rgba(199,199,199,0.8183648459383753) 0%, rgba(255,255,255,0.8631827731092436) 100%, rgba(172,172,172,1) 100%);
@@ -200,23 +199,12 @@ li a {
     .sliderChair {
         display: none;
     }
-}
-
-.arrowWrapper {
-    border: 1px solid red;
-    display: flex;
-    width: 900px;
-    justify-content: space-between;
-}
-
-.leftArrow,
-.rightArrow {
-    font-size: 100px;
-    color: #27c7ab;
-    cursor: pointer;
-    align-items: center;
-    display: flex;
-    z-index: 9999;
+    .sliderText {
+        overflow: hidden;
+        overflow: scroll;
+        border: 1px solid #27c7ab;
+        padding: 10px;
+    }
 }
 
 .sliderText {
@@ -224,15 +212,6 @@ li a {
     text-align: center;
     line-height: 25px;
     justify-content: center;
-}
-
-@media (max-width: 1000px) {
-    .sliderText {
-        overflow: hidden;
-        overflow: scroll;
-        border: 1px solid #27c7ab;
-        padding: 10px;
-    }
 }
 
 .sliderItem {
@@ -268,6 +247,10 @@ li a {
         align-items: center;
         flex-direction: column;
     }
+    .box {
+        margin: 20px 0 10px 0;
+        width: 60%;
+    }
 }
 
 .box {
@@ -283,13 +266,6 @@ li a {
 .box:nth-child(3) {
     padding: 10px 10px 10px 10px;
     border: 1px solid #d4d4d4;
-}
-
-@media (max-width: 1350px) {
-    .box {
-        margin: 20px 0 10px 0;
-        width: 60%;
-    }
 }
 
 @media (max-width: 704px) {
@@ -359,13 +335,10 @@ li a {
         flex-direction: column;
         text-align: center;
     }
-}
-
-@media (max-width: 1180px) {
     .plan {
-     align-content: center;
-     margin: 40px 0 0 0;
-    }
+        align-content: center;
+        margin: 40px 0 0 0;
+       }
 }
 
 .priceList {
@@ -399,12 +372,9 @@ li a {
 .insideBoxContent {
     display: flex;
     align-items: center;
-}
-
-.insideBoxContent {
     margin-top: 20px;
 }
- 
+
 .prizeBackGround {
     background-color: #f1f1f1;
 }
@@ -511,9 +481,6 @@ li a {
     .circleTop {
         display: none;
     }
-}
-
-@media (max-width: 1180px) {
     .circleTopMdl {
         display: none;
     }
@@ -655,7 +622,6 @@ li a {
     font-weight: bold;
 }
 
-
 form {
     height: 500px;
     width: 90%;
@@ -682,7 +648,6 @@ textarea {
     font-size: larger;
     align-items: center;
     resize: none;
-    
 }
 
 input[type="text"]::placeholder,
@@ -690,6 +655,7 @@ input[type="text"]::placeholder,
 textarea::placeholder {
     color: rgb(172, 171, 171);
 }
+
 button {
     cursor: pointer;
 }
@@ -733,6 +699,9 @@ button:hover {
     .formOrangeChair {
         display: none;
     }
+    .orangeChairContent {
+        justify-content: inherit;
+    }
 }
 
 .orangeChairText {
@@ -752,12 +721,6 @@ button:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-}
-
-@media (max-width: 500px) {
-    .orangeChairContent {
-        justify-content: inherit;
-    }
 }
 
 .copyRightWrapper {
