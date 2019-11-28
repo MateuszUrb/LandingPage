@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'ralewayregular' ;
+    
+}
+
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 @font-face {
@@ -32,14 +40,34 @@ header {
     width: 90%;
     margin: 0 auto;
     display: flex;
+    display: flex;
+    justify-content: center;
 }
 
 .navBar {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 40px;
     align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .navBar {
+        justify-content: center;
+        margin: 50px 0 0 0;
+    }
+    nav {
+        margin:  0 0 40px 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .headerLogo{
+        justify-content: center;
+        z-index: 1;
+        margin: -40px 0 0 0;
+        font-size: 35px;
+    }
 }
 
 nav ul li {
@@ -61,6 +89,13 @@ nav ul li ul {
 
 nav ul li:hover ul {
     display: block;
+    z-index: 1;
+}
+
+@media (max-width: 1180px) {
+    nav ul li:hover ul {
+        border: 1px solid #27c7ab
+    }
 }
 
 nav ul li ul li {
@@ -82,8 +117,21 @@ nav ul li ul::after {
     transform: translateX(-164px) translateY(-14px);
 }
 
+@media (max-width: 1180px) {
+    nav ul li ul::after {
+        border-bottom: 10px solid #27c7ab;
+        transform: translateX(-166px) translateY(-14px);
+    }
+}
+
 nav ul li ul li:hover {
     background-color: rgb(37, 37, 37);
+}
+
+@media (max-width: 1180px) {
+    nav ul li ul li:hover {
+        border: 1px solid #27c7ab
+    }
 }
 
 header,
@@ -111,11 +159,6 @@ li a {
     margin: 0 10px 0 10px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
 
 .gradientBackg {
     background: rgb(199,199,199);
@@ -155,10 +198,16 @@ li a {
 
 @media (max-width: 1000px) {
     .sliderChair {
-        margin: 20px 0 20px 0;
+        display: none;
     }
 }
 
+.arrowWrapper {
+    border: 1px solid red;
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+}
 
 .leftArrow,
 .rightArrow {
@@ -190,6 +239,7 @@ li a {
     justify-content: center;
     display: flex;
     height: 350px;
+    margin: 0 0 30px 0;
     flex-direction: column;
 }
 
@@ -206,7 +256,7 @@ li a {
 }
 
 .chairBoxes {
-    margin: 30px 0 80px 0px;
+    margin: 80px 0 80px 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -227,6 +277,12 @@ li a {
     height: 280px;   
     display: flex;
     position: relative;
+    box-shadow: 10px 10px 15px -7px #27c7ab;
+}
+
+.box:nth-child(3) {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #d4d4d4;
 }
 
 @media (max-width: 1350px) {
@@ -279,8 +335,6 @@ li a {
 
 .lastBoxContent {
     margin-left: 10px;
-    border: 1px solid #d4d4d4;
-    padding: 10px 10px 10px 10px;
     height: 90%;
    
 }
@@ -302,7 +356,7 @@ li a {
 @media (max-width: 1180px) {
     .prizes {
         margin: 10px 10px 10px 10px;
-        display: none;
+        flex-direction: column;
         text-align: center;
     }
 }
@@ -310,6 +364,7 @@ li a {
 @media (max-width: 1180px) {
     .plan {
      align-content: center;
+     margin: 40px 0 0 0;
     }
 }
 
@@ -326,7 +381,6 @@ li a {
     content: "";
     display: block;
     height: 8px;
-    width: 350px;
     background-color: #27c7ab;
 }
 
@@ -367,7 +421,7 @@ li a {
 .prizes {
     display: flex;
     width: 100%;
-    height: 800px;
+    margin: 150px 0 0 0;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
@@ -453,13 +507,24 @@ li a {
     border: 2px solid #d4d4d4;
 }
 
+@media (max-width: 1180px) {
+    .circleTop {
+        display: none;
+    }
+}
+
+@media (max-width: 1180px) {
+    .circleTopMdl {
+        display: none;
+    }
+}
+
 .circleTopMdl {
     margin-left: 42%;
     margin-top: -30px;
     position: absolute;
     width: 60px;
     height: 60px;
-    display: block;
     background-color: #27c7ab;
     border-radius: 50%;
     border: 1px solid #27c7ab;
@@ -614,7 +679,7 @@ textarea {
     height: 70px;
     padding: 12px;
     border: 1px solid #27c7ab;
-    font-size: 30px;
+    font-size: larger;
     align-items: center;
     resize: none;
     
@@ -627,6 +692,11 @@ textarea::placeholder {
 }
 button {
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #398AD7;
+    transition: 0.5s;
 }
 
 .rodo {
@@ -659,6 +729,12 @@ button {
     padding-bottom: 20px;
 } 
 
+@media (max-width: 500px) {
+    .formOrangeChair {
+        display: none;
+    }
+}
+
 .orangeChairText {
     width: 83%;
     margin: 10px 0 5px 5px;
@@ -670,17 +746,22 @@ button {
     border-radius: 10px;
     border: none;
     height: 70px;
-    width: 53%;
     font-size: 35px;
     margin-top: 20px;
+    padding: 10px 10px;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
 }
 
+@media (max-width: 500px) {
+    .orangeChairContent {
+        justify-content: inherit;
+    }
+}
+
 .copyRightWrapper {
     width: 100%;
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -692,7 +773,6 @@ button {
 }
 
 .footerSocial {
-    width: 29%;
     align-items: center;
     display: flex;
 }
