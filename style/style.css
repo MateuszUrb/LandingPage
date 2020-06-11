@@ -715,8 +715,9 @@ button:hover {
     border-radius: 10px;
     border: none;
     height: 70px;
+    width: 50%;
     font-size: 35px;
-    margin-top: 20px;
+    margin-top: 20px auto 20px auto;
     padding: 10px 10px;
     text-transform: uppercase;
     font-weight: bold;
