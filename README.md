@@ -3,4 +3,5 @@ simple landing page Html &amp; css (**update: I hope this simple site is mobile 
 
 
 (**site is a little bit different from original concept :)**)
+[live Demo](https://mateuszurb.github.io/LandingPage_SitOnChair/)
 ![Alt text](https://github.com/MateuszUrb/LandingPage/blob/master/warsztat1.jpg)
